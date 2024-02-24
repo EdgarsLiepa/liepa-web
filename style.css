@@ -9,6 +9,15 @@ body {
     line-height: 1.6; /* Improved line spacing for readability */
     font-family: 'Fira Code', monospace;
 }
+
+/* create smaller margins when on phone screens */
+@media (max-width: 700px) {
+    body {
+        margin-left: 20pt;
+        margin-right: 20pt;
+    }
+}
+
 header {
     text-align: center;
     padding: 20px;
@@ -45,12 +54,12 @@ footer {
 }
 
 .about-me {
-    font-size: 16pt;
+    font-size: 14pt;
 }
 
 .intro-section {
     /* text size */
-    font-size: 1.3em;
+    font-size: 18pt;
 }
 
 .about-me-container {
@@ -76,6 +85,12 @@ footer {
     min-width: 20px;
     padding-top: 10px;
 }
+@media (max-width: 1100px) {
+    .image-section {
+        display: none;
+    }   
+}
+
 
 .bioinf-image {
 
@@ -100,11 +115,3 @@ color:yellowgreen; /* Blue color when focused */
 }
 
 
-@media (max-width: 1100px) {
-    .image-section {
-        display: none;
-    }   
-    /* .intro-section{
-        padding-right: 10px;
-    } */
-}
